@@ -77,13 +77,16 @@ uv sync
 # 2. keys
 cp .env.example .env.local   # then fill LIVEKIT_*, DEEPGRAM_API_KEY, GROQ_API_KEY, CARTESIA_API_KEY
 
-# 3. talk to it in the terminal (local voice loop)
+# 3. one-time: download the turn-detector + VAD model files
+uv run python -m jan_sampark_voice_agent.agent download-files
+
+# 4. talk to it in the terminal (local voice loop)
 uv run python -m jan_sampark_voice_agent.agent console
 
-# 4. or connect a room (LiveKit Agents Playground / phone via SIP)
+# 5. or connect a room (LiveKit Agents Playground / phone via SIP)
 uv run python -m jan_sampark_voice_agent.agent dev
 
-# 5. run the eval harness (the number)
+# 6. run the eval harness (the number)
 uv run python evals/run.py
 ```
 

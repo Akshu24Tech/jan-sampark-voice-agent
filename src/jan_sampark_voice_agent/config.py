@@ -11,7 +11,10 @@ import os
 # STT: Deepgram Nova (streaming). LLM: Groq (fast first-token).
 # TTS: Cartesia (streaming). Turn detection: LiveKit turn-detector model.
 STT_MODEL = os.getenv("JS_STT_MODEL", "nova-3")
-LLM_MODEL = os.getenv("JS_LLM_MODEL", "llama-3.3-70b-versatile")
+# Groq model id. gpt-oss-20b: fast, reasoning kept in a separate field (not
+# spoken). Run `uv run python -m jan_sampark_voice_agent.list_models` or check
+# console.groq.com for what your key can access; override with JS_LLM_MODEL.
+LLM_MODEL = os.getenv("JS_LLM_MODEL", "openai/gpt-oss-20b")
 TTS_VOICE = os.getenv("JS_TTS_VOICE", "")  # Cartesia voice id; empty = plugin default
 
 # --- Turn-taking / interruption knobs (JD: "interruption handling") ---
