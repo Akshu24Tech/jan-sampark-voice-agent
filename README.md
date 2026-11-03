@@ -15,6 +15,18 @@ not a generic restaurant-booking bot.
 
 ---
 
+## Demo
+
+A live call in the browser (LiveKit) — greeting, grounded scheme facts,
+**barge-in interruption**, objection handling ("is it a scam?"), and the
+responsible-AI scope guard, all in real time:
+
+<video src="https://github.com/Akshu24Tech/jan-sampark-voice-agent/raw/main/docs/demo.mp4" controls width="100%"></video>
+
+<sub>▶ If the player doesn't load, [watch/download the clip](docs/demo.mp4).</sub>
+
+---
+
 ## What it demonstrates (maps 1:1 to the role)
 
 | Responsibility | Where it lives |
