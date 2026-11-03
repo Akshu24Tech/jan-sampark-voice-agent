@@ -1,0 +1,21 @@
+[project]
+name = "jan-sampark-voice-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Akshu24Tech", email = "166976885+Akshu24Tech@users.noreply.github.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "livekit-agents[cartesia,deepgram,groq,silero,turn-detector]>=1.8.10",
+    "pydantic>=2.14.2",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+jan-sampark-voice-agent = "jan_sampark_voice_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.11.28,<0.12.0"]
+build-backend = "uv_build"
