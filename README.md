@@ -52,7 +52,23 @@ schema, memory) is pure Python with no LiveKit import, so it's unit-tested by
 
 ---
 
-## Quickstart
+## Try it in 30 seconds (no API keys)
+
+The decision layer runs with zero keys — great for a demo or a screen recording:
+
+```bash
+uv sync
+uv run streamlit run app.py        # browser chat UI: play the citizen, watch the agent's decisions
+uv run python demo_call.py         # scripted call, annotated transcript in the terminal
+uv run python evals/run.py         # the eval scorecard (26/26)
+```
+
+The UI shows objection detection, the responsible-AI scope refusal, grounded
+answers, the feedback record filling up, and cross-call memory on a callback.
+
+---
+
+## Quickstart (full voice, needs keys)
 
 ```bash
 # 1. install
